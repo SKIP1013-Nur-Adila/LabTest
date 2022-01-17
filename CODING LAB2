@@ -1,0 +1,31 @@
+package Tset;
+import java.util.Scanner;
+public class CylinderComputation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner(System.in);
+		
+		double baseArea, radius, surfaceArea, volume, height;
+		
+		System.out.print("Base radius ");
+		radius = input.nextDouble();
+		
+		System.out.print("Height of cylinder ");
+		height = input.nextDouble();
+		
+		baseArea = Math.PI * radius * radius;
+		System.out.printf("Base Area %.2f" , baseArea);
+		System.out.println();
+		
+		surfaceArea = 2.0 * Math.PI * radius + 2.0 * baseArea;
+		System.out.printf("Surface Area %.2f" , surfaceArea);
+		System.out.println();
+		
+		volume = baseArea * height;
+		System.out.printf("Volume %.2f" , volume);
+
+	}
+
+}
