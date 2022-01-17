@@ -12,10 +12,9 @@ public class TimeTable2 {
 	    for(int i=1; i<= 10; i++) {
 	    	System.out.print(i + "|");
 	       for(int j=1; j<=size; j++) {
-	          // to format the output use - flag modifier
 	          System.out.printf("%4d",  i*j );
 	       }
-	       System.out.println(); // new line
+	       System.out.println(); 
 	    }
 		
 
